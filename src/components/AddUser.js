@@ -39,11 +39,11 @@ const AddUser = () => {
             <h1>Please Add User: </h1>
 
             <form onSubmit={handleAddUser}>
-                <input onBlur={handleInputBlur} type="text" name="name" id="name" placeholder="Enter your name" />
+                <input onChange={handleInputBlur} type="text" name="name" id="name" placeholder="Enter your name" />
                 <br></br>
-                <input onBlur={handleInputBlur} type="text" name="address" id="address" placeholder='Your address' />
+                <input onChange={handleInputBlur} type="text" name="address" id="address" placeholder='Your address' />
                 <br></br>
-                <input onBlur={handleInputBlur} type="email" name="email" id="email" placeholder="Enter your email" />
+                <input onChange={handleInputBlur} type="email" name="email" id="email" placeholder="Enter your email" />
                 <br></br>
                 <button type="submit">Add User</button>
             </form>
